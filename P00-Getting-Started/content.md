@@ -3,7 +3,7 @@ title: "Parsing JSON"
 slug: parsing-json
 ---
 
-Just about every a‰pp you use involves sending information to or receiving information from the internet.
+Just about every app you use involves sending information to or receiving information from the internet.
 
 If you want your app to connect to servers owned by other people, then you are going to have to deal with *APIs* (Application Program Interfaces). An API just means a standard way for some piece of software to talk to another piece of software. In this case, a way for your app to talk to some server somewhere. For example, you may use an [API for getting weather information](http://openweathermap.org/api), an [API for detecting faces](http://www.faceplusplus.com/api-overview/) or one of [thousands of others](https://market.mashape.com/explore?sort=developers).
 
