@@ -3,7 +3,7 @@ title: "API calls with Alamofire"
 slug: api-calls-alamofire
 ---
 
-In this exercise, we'll be dealing with _live data_ from iTunes' top 25 _movie_ feed. We'll make a real network request and get the current data!
+In this exercise, we'll be dealing with _live data_ from iTunes' top 25 _movie_ feed. We'll make a real network request and get to work without the current data!
 
 Your mission now is to use the `Movie` struct we created to show information about a random movie from iTunes' top 25!
 
@@ -41,7 +41,7 @@ Alamofire.request(apiToContact).validate().responseJSON() { response in
 }
 ```
 
-We are using [Alamofire](https://github.com/Alamofire/Alamofire), a Swift networking library to manage our network requests. We've already included Alamofire in this project, but it's easy to install in any iOS project - just add `Alamofire` to your Cocoapods *Podfile*, then run `pod install`.
+We are using [Alamofire](https://github.com/Alamofire/Alamofire), a Swift networking library to manage our network requests. We've already included Alamofire in this project, but it's easy to install in any iOS project - just install Cocoapods on your computer, run the bash command `pod init` in the home folder of your project, add `Alamofire` to your Cocoapods *Podfile*, then run `pod install`.
 
 The above code follows the general format you will use for all network requests in Alamofire! It does the following:
 

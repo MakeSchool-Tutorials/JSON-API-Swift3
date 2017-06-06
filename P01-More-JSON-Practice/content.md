@@ -16,7 +16,7 @@ Woah. That's a bit overwhelming, isn't it? We won't be making real network reque
 ![Movies JSON](./itunes-data.png)
 
 > You'll want to reference this often as you complete this exercise. In fact, it might be nice to open this file in the *Assistant Editor* so that it's easy to reference as you do your coding in the *Standard Editor*.
-> 
+>
 > ![Assistant editor open with iTunes JSON data](./assistant-editor.png)
 
 # Let's parse some data
@@ -27,29 +27,12 @@ The bad news: we now have 25 items to read in. The good news: we are about to le
 
 ## Let's create a struct
 
-We have created a `Movie` struct for you inside of `Movie.swift`. Go ahead and open that now. Notice that we have created properties for `name`, `rightsOwner`, `price`, `link` and `releaseDate`. That's the information that we most care about for each movie. 
+We have created a `Movie` struct for you inside of `Movie.swift`. Go ahead and open that now. Notice that we have created properties for `name`, `rightsOwner`, `price`, `link` and `releaseDate`. That's the information that we most care about for each movie.
 
 We have included an incomplete `init` method - it'll be up to you to fill it in. Notice that the `init` method requires some `JSON` to be passed as a parameter. Can you see where this is going? Initializers that accept `JSON` objects will allow us to encapsulate the data cleanly! We can create a new `Movie` for each movie in the `iTunes-Movies.json`, and by passing the relevant chunk of JSON data to the `Movie` initializer, we can have the `Movie` take care of extracting the relevant information from the JSON and using it to populate its properties.
 
-In this case we are using a struct, but you can use classes for this purpose as well. We chose a struct because the all of the data is simple and we don't plan to update it after it is initialized.
+In this case we are using a struct, but you can use classes for this purpose as well. We chose a struct because all of the data is simple and we don't plan to update it after it is initialized.
 
-```
-struct Movie {
-    let name: String
-    let rightsOwner: String
-    let price: Double
-    let link: String
-    let releaseDate: String
-
-    init(json: JSON) {
-        self.name = ""
-        self.rightsOwner = ""
-        self.price = 0
-        self.link = ""
-        self.releaseDate = ""
-    }
-}
-```
 
 ## Explore the `iTunes-Movies.json` file
 
@@ -85,6 +68,7 @@ Now that you have a working `Movie` struct, let's load in all the movies!
 
 > [challenge]
 > In `exerciseThree` create a `Movie` for each movie in `iTunes-Movies.json` and use those to populate the `allMovies` array. We have provided `allMoviesData`, an array of `JSON` objects for you to use.
+> If you're struggling to think about how to solve this, try using a Swift for-loop, or if you're in for a real challenge, a higher order function like filter()!
 
 ## Which movies are Disney movies?
 
@@ -95,7 +79,7 @@ Now that you have a working `Movie` struct, let's load in all the movies!
 
 > [solution]
 > Your output should look like this:
-> 
+>
 	The following movies are Disney movies:
 	Zootopia
 	Finding Nemo
@@ -108,7 +92,7 @@ Now that you have a working `Movie` struct, let's load in all the movies!
 <!-- html comment to break boxes -->
 > [solution]
 > Your output should look something like this:
-> 
+>
 ```
 The following movies are cost less than $15:
 London Has Fallen: $14.99
@@ -144,7 +128,7 @@ Be Somebody: $9.99
 
 > [solution]
 > Your output should look something like this:
-> 
+>
 ```
 The following movies were released in 2016:
 Zootopia was released on March 4, 2016
