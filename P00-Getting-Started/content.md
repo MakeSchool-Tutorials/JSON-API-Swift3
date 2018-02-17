@@ -108,7 +108,7 @@ We've created a starter project for you with the libraries we'll be using alread
 
 > [action]
 >
-1. Download the JSON & APIs starter project [here](https://github.com/MakeSchool-Tutorials/JSON-API-Swift-Starter/archive/swift3.zip).
+1. Download the JSON & APIs starter project [here](https://github.com/MakeSchool-Tutorials/JSON-API-Swift-Starter/archive/swift4.zip).
 1. Unzip the project and move it to your projects folder.
 1. Go through the necessary steps to get this project on GitHub. Remember to commit often!
 1. Make sure that you open *API-Sandbox.xcworkspace* and not *API-Sandbox.xcodeproj*.
