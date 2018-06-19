@@ -150,6 +150,7 @@ Triple 9 was released on February 26, 2016
 Kung Fu Panda 3 was released on January 29, 2016
 Be Somebody was released on June 10, 2016
 ```
+
 # Wrapping up
 
 Isn't is nice to deal with structs? Can you imagine how nasty the code would look if you were iterating over `JSON` objects in each of those challenges? Make sure to _always_ create a struct or class to encapsulate the data you read from JSON responses! It will make your code cleaner and your life easier!
